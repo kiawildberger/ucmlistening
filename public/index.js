@@ -8,11 +8,10 @@ async function setCode() {
 }
 
 function sendRec() {
-    
+
     let packet = {
         code: sessionCode,
-        music: sanitize(id("lname").value),
-        identity: btoa(ipaddr + navigator.userAgent)
+        music: sanitize(id("lname").value)
     }
     fetch('/send', {
         headers: {
