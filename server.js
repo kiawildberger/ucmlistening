@@ -75,6 +75,6 @@ app.post("/send", (req, res) => { // a Code that should match array in Active Co
 
 app.listen(port, () => {
     console.log('server listening on '+port)
-    let template = fs.readFileSync("./datatemplate.json")
-    fs.writeFileSync("./data.json", template) // clear data on server restart (often bad.)
+    // let template = fs.readFileSync("./datatemplate.json")
+    // fs.writeFileSync("./data.json", template) // clear data on server restart (often bad.)
 })
